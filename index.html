@@ -3,6 +3,11 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
         <!-- Google Fonts -->
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
@@ -13,7 +18,7 @@
         <title>YDict</title>
     </head>
     <body>
-        <audio id="sound"></audio>
+        <audio id="sound" crossorigin="anonymous"></audio>
         <div class="container">
             <h1>
                 <img src="img/favicon.svg" alt="LOGO">
@@ -24,8 +29,10 @@
                     type="text"
                     placeholder="Type the word here.."
                     id="inp-word"
+                    autocomplete="off"
                 />
                 <button id="search-btn">Search</button>
+                <button id="dark-mode-toggle">Toggle Dark Mode</button>
             </div>
             <div class="result" id="result"></div>
         </div>
